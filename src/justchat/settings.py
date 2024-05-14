@@ -19,10 +19,8 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
-    'daphne',
+    'channels',
     'chat',
-    
-
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -60,7 +58,7 @@ TEMPLATES = [
 ]
 
 WSGI_APPLICATION = 'justchat.wsgi.application'
-ASGI_APPLICATION = "justchat.asgi.application"
+ASGI_APPLICATION = "justchat.routing.application"
 
 # Database
 # https://docs.djangoproject.com/en/5.0/ref/settings/#databases
